@@ -7,4 +7,5 @@ We uploaded the Verilog HDL implementation of the full adder and the comparator 
 In ./lab01/full_adder, there are two .v files: 
    1. full_adder.v: implement a full adder.
    2. tb_full_adder.v: testbench of the full adder.
+
 Files in ./lab01/comparator are similar to this.
