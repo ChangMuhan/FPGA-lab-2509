@@ -5,24 +5,24 @@ module running_light(
 	output reg[3:0] led_out
 );
 
-parameter TIME_INTERVAL = 25000;
+parameter TIME_INTERVAL = 25000000;
 reg[25:0] counter;
 reg[3:0] led;
 
 always @(posedge sys_clk or negedge sys_rst_n) begin
 	if (!sys_rst_n)begin
 		counter <= 0;
-		led <= 4'b0001;
-		led_out <= ~4'b0001;
+		led <= 4'b1000;
+		led_out <= ~4'b1000;
 	end
 
 	else if (counter == TIME_INTERVAL)begin
 		counter <= 0;
-		if (led == 4'b1000)begin
-			led <= 4'b0001;
+		if (led == 4'b0001)begin
+			led <= 4'b1000;
 		end
 		else begin
-			led <= led << 1;
+			led <= led >> 1;
 		end
 		led_out <= ~led;
 	end
