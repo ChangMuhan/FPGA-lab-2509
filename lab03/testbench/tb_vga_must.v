@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_vga_colorbar;
+module tb_vga_must;
 
 reg sys_clk ;
 reg sys_rst_n ;
@@ -8,12 +8,6 @@ reg sys_rst_n ;
 wire hsync ;
 wire [15:0] rgb ;
 wire vsync ;
-
-
-initial begin
-    $dumpfile("signals_tb_vga_colorbar.vcd");
-    $dumpvars(0, tb_vga_colorbar);
-end
 
 initial begin
     #30000000
@@ -29,7 +23,7 @@ end
 
 always #10 sys_clk = ~sys_clk ;
 
-vga_colorbar vga_colorbar_inst
+vga_must vga_must_inst
 (
  .sys_clk (sys_clk ), 
  .sys_rst_n (sys_rst_n ), 
@@ -38,5 +32,6 @@ vga_colorbar vga_colorbar_inst
  .vsync (vsync ), 
  .rgb (rgb ) 
 );
+
 
  endmodule
