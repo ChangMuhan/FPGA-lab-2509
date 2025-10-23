@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 
 // Top-level: generate VGA timing and render "MUST"
-module vga_colorbar(
+module vga_must(
     input  wire        sys_clk,   // System Clock, 50MHz
     input  wire        sys_rst_n, // Reset signal. Low level is effective
     output wire        hsync,     // Line sync signal
