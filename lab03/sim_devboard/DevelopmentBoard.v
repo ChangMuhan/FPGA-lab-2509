@@ -18,7 +18,7 @@ module DevelopmentBoard(
 	output wire led5
 );
 
-vga_colorbar vga_colorbar_inst
+vga_must vga_must_inst
  (
  .sys_clk (clk), 
    .sys_rst_n (reset), 
