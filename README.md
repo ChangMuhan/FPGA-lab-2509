@@ -13,4 +13,11 @@ Files in ./lab01/comparator are similar to this.
 ## 2025.10.7
 We upload the implementation of the running light.
 
-The demonstration video is available [here](https://bilibili.com/video/BV1bJxRzEEKM).
+The demonstration video is available [here](https://bilibili.com/video/BV1bJxRzEEKM). 
+
+## 2025.10.24
+We upload lab04: Simple state machine.
+
+The module implementations are in ./lab04/RTL;
+
+Testbenches are in ./lab04/testbench;
