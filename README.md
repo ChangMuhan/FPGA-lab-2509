@@ -21,3 +21,5 @@ We upload lab04: Simple state machine.
 The module implementations are in ./lab04/RTL;
 
 Testbenches are in ./lab04/testbench;
+
+The demonstration video is available [here](https://www.bilibili.com/video/BV1aPsHz4EWu).
